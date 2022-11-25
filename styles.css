@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+/* -- CSS Reset -- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* -- Global Styles -- */
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    color: hsl(0, 0%, 95%);
+    padding: 20px 0px 20px 0px;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 2;
+    font-size: 15px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    font-weight: bold;
+    padding: 20px 40px;
+    margin: 50px 0 20px 0;
+    background: hsl(0, 0%, 95%);
+    font-size: 15px;
+    border-radius: 25px;
+}
+
+img {
+    width: 30%;
+}
+
+/* -- Main -- */
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.column-1 {
+    background-color: hsl(31, 77%, 52%);
+    padding: 60px;
+    border-radius: 10px 0 0 10px;
+}
+
+.column-1 .btn {
+    color:  hsl(31, 77%, 52%);
+}
+
+.column-1 .btn:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.column-2 {
+    background-color: hsl(184, 100%, 22%);
+    padding: 60px;
+}
+
+.column-2 .btn {
+    color:  hsl(184, 100%, 22%);
+}
+
+.column-2 .btn:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+.column-3 {
+    background-color: hsl(179, 100%, 13%);
+    padding: 60px;
+    border-radius: 0 10px 10px 0;
+}
+
+.column-3 .btn {
+    color: hsl(179, 100%, 13%);
+}
+
+.column-3 .btn:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsla(0, 0%, 100%, 0.75);
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+}
+
+
+/* -- Media Queries -- */
+
+@media screen and (max-width: 500px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .column-1 {
+        border-radius: 10px 10px 0 0;
+        padding: 40px;
+    }
+
+    .column-2 {
+        padding: 40px;
+    }
+
+    .column-3 {
+        border-radius: 0 0 10px 10px;
+        padding: 40px;
+    }
+}
